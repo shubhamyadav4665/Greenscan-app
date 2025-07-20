@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenScan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">GreenScan</div>
+    <ul class="nav-links">
+      <li><a href="#scanner">Scan</a></li>
+      <li><a href="#education">Learn</a></li>
+    </ul>
+    <a href="#education" class="nav-btn">Why it Matters</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Know what you buy.</h1>
+      <p>Scan product barcodes to verify their true sustainability.</p>
+      <div class="hero-buttons">
+        <button id="scan-btn" class="btn">Open Camera</button>
+        <a href="#education" class="btn secondary">Learn More</a>
+      </div>
+      <span class="eco-stat">+120 eco-labels verified</span>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1612817159949-6fa79c905720" alt="Eco Product" />
+      <div class="eco-claim-chip">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" alt="Warning Icon" style="height: 40px;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Scanner Section -->
+  <section id="scanner" class="scan-section">
+    <div id="scanner-box" class="hidden" aria-label="Barcode Scanner"></div>
+    <div class="button-row">
+      <button id="lookup-btn" class="btn primary">Check Product</button>
+      <button id="close-scanner-btn" class="btn secondary hidden">Close Scanner</button>
+    </div>
+    <input type="text" id="barcode-input" placeholder="Enter barcode" aria-label="Barcode Input" />
+  </section>
+
+  <!-- Results -->
+  <div id="result" class="result-glass hidden">
+    <div id="eco-badge" class="eco-badge green">Eco Rating: A+</div>
+    <div id="eco-score">Green</div>
+    <div id="details">Product Details</div>
+    <div id="eco-labels-chips"></div>
+    <div id="eco-explanation"></div>
+    <button id="share-btn" class="btn">Share Result</button>
+  </div>
+
+  <!-- Features Section -->
+  <section class="info-cards">
+    <div class="card chip">Accurate Label Match</div>
+    <div class="card chip">Live Camera Scan</div>
+    <div class="card chip">Learn & Educate</div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h3>Why Greenwashing Hurts</h3>
+    <ul>
+      <li>Greenwashed products mislead conscious buyers.</li>
+      <li>They overshadow real sustainable brands.</li>
+      <li>Our tool helps cut through the noise and find truth.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 GreenScan. Stay conscious, stay informed.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/@ericblade/quagga2@1.2.6/dist/quagga.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
